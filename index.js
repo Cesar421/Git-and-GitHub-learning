@@ -43,7 +43,7 @@ const getBlogContent = async () => {
     const posts = await getPosts(user);
     await getCommentsForEachPost(posts);
 
-    renderHtml(user, post);
+    renderHtml(user, posts);
   } catch (err) {
     console.log(err);
   }
